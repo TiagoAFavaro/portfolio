@@ -1,0 +1,78 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 4 rem;
+    scroll-margin-top: 20rem;
+}
+
+.about .about__left {
+    max-width: 40rem;
+    flex: 1;
+}
+
+.about .about__left ul {
+    margin-left: -1.2rem;
+}
+
+.about .about__left ul li {
+    display: inline-block;
+}
+
+.about .about__left ul li a {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.about .about__right {
+    flex: 1 ;
+    max-width: 66rem;
+}
+
+.about .about__left .curriculo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about .about__left .curriculo a{
+    display: inline-block;
+
+    width: 100%;
+    max-width: 172px;
+    
+    padding: 10px;
+    margin:  1rem;
+    margin-top: 20px;
+    
+
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 700;
+    letter-spacing: .15rem;
+
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.about .about__left .curriculo a img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about__left {
+        max-width: 66rem;
+        text-align: center;
+    }
+
+    .about .about__right {
+        text-align: center;
+    }
+}
